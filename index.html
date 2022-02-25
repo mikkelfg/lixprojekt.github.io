@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="da">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Velkommen til hjemmesiden</title>
+
+  <link rel="stylesheet" href="style.css?v=1.0">
+
+</head>
+
+<body>
+  <section class="layout">
+    <div class="header"><h1>LIX-beregner</h1></div>
+    <div class="indhold">
+
+        <p>
+          <strong>Velkommen til LIX beregneren.</strong> <br/>
+          
+          Denne hjemmeside kan beregne LIX-tallet for en tekst. <br/>LIX er udarbejdet af den svenske pædagog C.H. Björnson, og står for læsbarhedsindeks. <br>Det er en skala over hvor læsbar en tekst er - ud fra parametre som antal ord, <br>antal punktummer i teksten og antallet af lange ord, der er over 6 bogstaver lange. <br/><br/>Selve LIX-tallet beregnes ved at tage de gennemsnitlige antal ord pr. sætning, og dertil addere procentdelen af de lange ord.<br/><br/>
+
+          <br/>
+          <textarea id="tekst" class="form-control" style="width: 40%"></textarea>
+          <br/>
+          <button id="beregn" type="button">Beregn LIX tal</button>
+          <button id="nulstil" type="button" value="Nulstil" onclick="javascript:nulstil();">Nulstil</button>
+          <p id="lix_resultat"></p>
+        </p>
+
+    </div>
+    <div class="help">
+      <p>
+      Skala for LIX:
+      <table style="border-collapse: collapse; width: 40%;" border="1" class="center">
+        <tbody>
+        <tr>
+        <td style="width: 50%;"><strong>Tal</strong></td>
+        <td style="width: 50%;"><strong>Forklaring</strong></td>
+        </tr>
+        <tr>
+        <td style="width: 50%;">&gt;=55</td>
+        <td style="width: 50%;">
+        <p>Meget sv&aelig;r, faglitteratur p&aring; akademisk niveau, lovtekster.</p>
+        </td>
+        </tr>
+        <tr>
+        <td style="width: 50%;">45-54</td>
+        <td style="width: 50%;">Sv&aelig;r, f.eks. saglige b&oslash;ger, popul&aelig;rvidenskabelige v&aelig;rker, akademiske udgivelser.</td>
+        </tr>
+        <tr>
+        <td style="width: 50%;">35-44</td>
+        <td style="width: 50%;">Middel, f.eks. dagblade og tidsskrifter.</td>
+        </tr>
+        <tr>
+        <td style="width: 50%;">25-34</td>
+        <td style="width: 50%;">Let for &oslash;vede l&aelig;sere, f.eks. ugebladslitteratur og sk&oslash;nlitteratur for voksne.</td>
+        </tr>
+        <tr>
+        <td style="width: 50%;">&lt;=24</td>
+        <td style="width: 50%;">Let tekst for alle l&aelig;sere, f.eks. b&oslash;rnelitteratur.</td>
+        </tr>
+        <tr>
+        <td style="width: 50%;" colspan="2">
+        <p>Kilde: <a href="https://da.wikipedia.org/wiki/LIX">https://da.wikipedia.org/wiki/LIX</a></p>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="footer">Af: Marcus og Mikkel, Aarhus Tech - foråret 2022 - CC BY-NC-SA</div>
+  </section>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
