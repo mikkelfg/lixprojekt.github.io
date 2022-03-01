@@ -1,10 +1,11 @@
 <!doctype html>
-
+<!-- Velkommen til vores LIX-beregner! :) -->
 <html lang="da">
 
 <head>
+<!-- Vi starter med det grundlæggende, karaktersæt og titel samt stylesheet -->
 
-  <meta charset="utf-8">
+<meta charset="utf-8">
 
   <title>Velkommen til hjemmesiden</title>
 
@@ -14,25 +15,24 @@
 
 <body>
   <section class="layout">
-    <div class="header"><h1>LIX-beregner</h1></div>
+    <div class="header"><h1>LIX-beregner</h1></div> <!-- Overskrift defineres -->
     <div class="indhold">
 
         <p>
-          <strong>Velkommen til LIX beregneren.</strong> <br/>
+          <strong>Velkommen til LIX beregneren.</strong> <br/> <!-- Intro -->
           
-          Denne hjemmeside kan beregne LIX-tallet for en tekst. <br/>LIX er udarbejdet af den svenske pædagog C.H. Björnson, og står for læsbarhedsindeks. <br>Det er en skala over hvor læsbar en tekst er - ud fra parametre som antal ord, <br>antal punktummer i teksten og antallet af lange ord, der er over 6 bogstaver lange. <br/><br/>Selve LIX-tallet beregnes ved at tage de gennemsnitlige antal ord pr. sætning, og dertil addere procentdelen af de lange ord.<br/><br/>
+          Denne hjemmeside kan beregne LIX-tallet for en tekst. <br/>LIX er udarbejdet af den svenske pædagog C.H. Björnson, og står for læsbarhedsindeks. <br>Det er en skala over hvor læsbar en tekst er - ud fra parametre som antal ord, <br>antal punktummer i teksten og antallet af lange ord, der er over 6 bogstaver lange. <br/><br/>Selve LIX-tallet beregnes ved følgende formel: Antal ord / Antal punktummer + Lange ord * 100 / Antal ord.<br/><br/>
 
-          <br/>
+          <br/> <!-- Herunder defineres tekstboksen og knapper der kalder javascript -->
           <textarea id="tekst" class="form-control" onkeyup="javascript:beregnLix();" onkeydown="javascript:beregnLix();" style="width: 40%"></textarea>
           <br/>
           <button id="beregn" type="button" onclick="javascript:beregnLix();">Beregn LIX tal</button>
           <button id="nulstil" type="button" value="Nulstil" onclick="javascript:nulstil();">Nulstil</button>
-          <p id="resultat">Resultat</p>
-          <p id="lix_resultat"></p>
+          <p id="resultat"><em>Venter på input ...</em></p>
         </p>
 
     </div>
-    <div class="help">
+    <div class="help"> <!-- Herunder vises help delen -->
       <p>
       Skala for LIX:
       <table style="border-collapse: collapse; width: 40%;" border="1" class="center">
@@ -70,8 +70,8 @@
         </tr>
         </tbody>
         </table>
-    </div>
-    <div class="footer">Af: Marcus og Mikkel, Aarhus Tech - foråret 2022 - CC BY-NC-SA</div>
+    </div> <!-- Herunder vises footer -->
+    <footer class="footer">Af: Marcus og Mikkel, Aarhus Tech - foråret 2022 - CC BY-NC-SA</footer>
   </section>
 
   <script src="scripts.js"></script>
