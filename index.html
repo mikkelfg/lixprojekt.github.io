@@ -23,10 +23,11 @@
           Denne hjemmeside kan beregne LIX-tallet for en tekst. <br/>LIX er udarbejdet af den svenske pædagog C.H. Björnson, og står for læsbarhedsindeks. <br>Det er en skala over hvor læsbar en tekst er - ud fra parametre som antal ord, <br>antal punktummer i teksten og antallet af lange ord, der er over 6 bogstaver lange. <br/><br/>Selve LIX-tallet beregnes ved at tage de gennemsnitlige antal ord pr. sætning, og dertil addere procentdelen af de lange ord.<br/><br/>
 
           <br/>
-          <textarea id="tekst" class="form-control" style="width: 40%"></textarea>
+          <textarea id="tekst" class="form-control" onkeyup="javascript:beregnLix();" onkeydown="javascript:beregnLix();" style="width: 40%"></textarea>
           <br/>
-          <button id="beregn" type="button">Beregn LIX tal</button>
+          <button id="beregn" type="button" onclick="javascript:beregnLix();">Beregn LIX tal</button>
           <button id="nulstil" type="button" value="Nulstil" onclick="javascript:nulstil();">Nulstil</button>
+          <p id="resultat">Resultat</p>
           <p id="lix_resultat"></p>
         </p>
 
