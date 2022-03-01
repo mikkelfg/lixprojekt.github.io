@@ -16,7 +16,7 @@
   .header { 
       grid-area: header; 
       text-align: center;
-      background-color: aqua;
+      background-color: #61b335;
       padding-top: 2%;
       padding-bottom: 2%;
       padding-right: 20%;
